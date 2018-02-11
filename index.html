@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://www.googleapis.com/fonts?='Roboto'"
+</head>
+<style>
+  body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  #chooseDisplay{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  #chooseDisplay::after{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #999;
+    z-index: 4;
+  }
+  #chooseDisplay p{
+    margin-bottom: 24px;
+  }
+  #chooseDisplay .actions{
+    display: flex;
+    flex-direction: row;
+  }
+  #chooseDisplay .actions button:first-child{
+    margin-right: 24px;
+  }
+</style>
+<body>
+  <!-- <div id="chooseDisplay">
+    <p>I am viewing this on a:</p>
+    <div class="buttons">
+    <button onClick="showImage(image2x)">Retina Display</button>
+    <button onClick="showImage(image1x)">Non-Retina Display</button>
+    </div>
+  </div> -->
+  <div class="spaced-image">
+    <img id="image1x" src="images/spaced-1x.png" alt="The image failed to load. Please reload the page.">
+    <!-- <img id="image2x" src="images/spaced-2x.png" alt="The image failed to load. Please reload the page."> -->
+  </div>
+</body>
+</html>
